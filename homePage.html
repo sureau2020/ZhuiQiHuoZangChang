@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>追妻火葬场</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="left-column">
+            <div id="time-display" style="color: gray;">时间：白天</div>
+            <div class="header" id="name"></div>
+            <div class="header" id="age"></div>
+            <div class="header" id="yanjie"></div>
+            <div class="header" id="nengli"></div>
+            <div class="points">灵感点：<span id="points">0</span></div>
+            <div class="header"  id="rate"></div>
+            <button class="button" onclick="addPoint(1,true)">获取灵感点</button>
+            <div id="neixing"></div>
+            <div id="menu" style="margin-top: 1vh; display:none">
+                <button class="button" onclick="reading()">看书：消耗5灵感点</button>    
+                <button class="button" onclick="gongzuo()">独自工作：消耗5灵感点</button> 
+                <button class="button" onclick="xunlian()">训练：消耗15灵感点</button> 
+                <button class="button" onclick="chenSi()">沉思：消耗50灵感点</button>  
+                <button class="button" onclick="">谈论公事：消耗5灵感点</button>  
+                <button class="button" onclick="">协同工作：消耗5灵感点</button>  
+                <button class="button" onclick="">聊天：消耗5灵感点</button>  
+                <button class="button" onclick="">打球：消耗5灵感点</button>  
+                <button class="button" onclick="">哼歌：消耗5灵感点</button>  
+                <button class="button" onclick="">削苹果：消耗5灵感点</button>  
+                <button class="button" onclick="">送鱼：消耗一条鱼 </button>
+                <button class="button" onclick="">卖鱼：卖掉所有鱼 </button>
+                <button class="button" onclick="">钓鱼：消耗5灵感点</button>  
+                <div id="yuKuang" class="yuKuang">鱼筐：</div>
+            </div>
+           
+        </div>
+        <div class="column" id="middle-column"></div>
+        <div class="column" id="right-column">
+            <div id="zhang-bai-he" style="display: none;">
+            <div class="header" id="zhang-name">章北海</div>
+            <div class="header" id="zhang-age">年龄：</div>
+            <div id="love">关系：同事</div>
+            <h6>已知情报：</h6>
+            
+            </div>
+        </div>
+    </div>
+    <script src="Logic.js"></script>
+</body>
+</html>
